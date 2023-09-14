@@ -26,7 +26,8 @@ class AppStoreProvider implements IProvider {
       if (!opt.packageName) {
         opt.packageName = getVersionInfo().getPackageName();
       }
-      const countryCode = opt.country ? `${opt.country}/` : '';
+      // const countryCode = opt.country ? `${opt.country}/` : '';
+      const countryCode = 'KR/';
       const dateNow = new Date().getTime();
 
       return fetch(

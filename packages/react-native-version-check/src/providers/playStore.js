@@ -34,7 +34,8 @@ class PlayStoreProvider implements IProvider {
         ...opt.fetchOptions,
       };
 
-      const storeUrl = `https://play.google.com/store/apps/details?id=${opt.packageName}&hl=en&gl=US`;
+      // const storeUrl = `https://play.google.com/store/apps/details?id=${opt.packageName}&hl=en&gl=US`;
+      const storeUrl = `https://play.google.com/store/apps/details?id=${opt.packageName}&hl=en&gl=KR`;
 
       return fetch(storeUrl, opt.fetchOptions)
         .then(res => res.text())
